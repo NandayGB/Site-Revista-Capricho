@@ -1,0 +1,48 @@
+<div class="categories">
+    <div class="category">Horóscopo</div>
+    <div class="category">TESTES</div>
+    <div class="category">Sociedade</div>
+    <div class="category">Entretenimento</div>
+    <div class="category">Moda</div>
+    <div class="category">Beleza</div>
+    <div class="category">Comportamento</div>
+  </div>
+  
+  <style>
+    .categories {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 100%;
+    }
+  
+    .category {
+      background-color: #f2f2f2;
+      border-radius: 5px;
+      color: #333;
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+      padding: 10px;
+      text-align: center;
+      width: calc(33.333% - 10px);
+    }
+  
+    .gradient-box {
+  background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple);
+  border-radius: 5px;
+  height: 200px;
+  width: 300px;
+}
+    @media (max-width: 768px) {
+      .category {
+        width: calc(50% - 10px);
+      }
+    }
+  
+    @media (max-width: 480px) {
+      .category {
+        width: calc(100% - 10px);
+      }
+    }
+  </style>
